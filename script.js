@@ -21,7 +21,7 @@ function displayClock() {
 
   timeDisplay.textContent = isMilitaryTime 
     ? `${militaryHours}:${minutes}:${seconds}`
-    : `${standardHours}:${minutes}:${seconds} ${militaryHours > 12 ? 'PM' : 'AM'}`;
+    : `${standardHours}:${minutes}:${seconds} ${militaryHours >= 12 ? 'PM' : 'AM'}`;
 }
 
 const toggleButton = document.getElementById('toggle-btn');
